@@ -10,6 +10,8 @@ finish-args:
   - --device=dri
   - --share=network
   - --filesystem=home
+cleanup-commands:
+  - 'make clean'
 modules:
   - name: BuhoCMS
     buildsystem: simple
@@ -47,7 +49,6 @@ modules:
       - ./configure --prefix=/${FLATPAK_DEST}
       - make all
       - make install
-      - make clean
     make-args: 
       - INSTALL_SYMLINKS=1
     make-install-args: 
