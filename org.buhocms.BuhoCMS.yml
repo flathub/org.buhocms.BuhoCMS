@@ -54,6 +54,8 @@ modules:
     cleanup:
       - /lib/pkgconfig
       - /man
+    cleanup-commands:
+      - 'make clean'
     sources:
       - type: archive
         url: https://www.kernel.org/pub/software/scm/git/git-2.39.2.tar.xz
