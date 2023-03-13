@@ -41,19 +41,14 @@ modules:
         sha256: 22dd224edcbf214d3bfc9cf74b471cf475d8c15600119129bba30a57768a6b2d
         strip-components: 0
   - name: git
-    buildsystem: simple
-    build-commands:
-      - make configure
-      - ./configure --prefix=/${FLATPAK_DEST}
-      - make all
-      - make install
-    make-args: 
+    make-args:
+      - NO_TCLTK=YesPlease
       - INSTALL_SYMLINKS=1
-    make-install-args: 
+    make-install-args:
+      - NO_TCLTK=YesPlease
       - INSTALL_SYMLINKS=1
-    cleanup:
-      - /lib/pkgconfig
-      - /man
+    post-install:
+      - find . -type f -name perllocal.pod -delete
     sources:
       - type: archive
         url: https://www.kernel.org/pub/software/scm/git/git-2.39.2.tar.xz
