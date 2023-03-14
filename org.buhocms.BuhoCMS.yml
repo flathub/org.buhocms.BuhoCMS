@@ -25,11 +25,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/iakmds/buhocms.git
-        tag: v0.3.0-flatpak
-        commit: 5f246ea3bbe87a242010800430ced0bd7d31d263
+        tag: v0.4.0
+        commit: 3efccdeba6bcf6a5523d54f93b08471182464679
       - type: archive
-        url: https://github.com/iakmds/buhocms/releases/download/v0.3.0/BuhoCMS-Linux-Portable.tar.gz
-        sha256: 3159db5103fc5b8056ab277dd3d56c1d9e50cb0b7d066686f75887e8a2664903
+        url: https://github.com/iakmds/buhocms/releases/download/v0.4.0/BuhoCMS-Linux-Portable.tar.gz
+        sha256: 17597f22f8df4f2c48994bdbacad45850c3430880ed8669ec77b50d22972dbe2
         strip-components: 0
   - name: hugo
     buildsystem: simple
@@ -37,8 +37,8 @@ modules:
       - install -Dm755 hugo ${FLATPAK_DEST}/bin/
     sources:
       - type: archive
-        url: https://github.com/gohugoio/hugo/releases/download/v0.111.1/hugo_0.111.1_linux-amd64.tar.gz
-        sha256: 22dd224edcbf214d3bfc9cf74b471cf475d8c15600119129bba30a57768a6b2d
+        url: https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_0.111.3_linux-amd64.tar.gz
+        sha256: 61500f6d39a23d36b946a9f44611c804aec4f1379d6113528672b1ac3077397a
         strip-components: 0
   - name: git
     make-args:
