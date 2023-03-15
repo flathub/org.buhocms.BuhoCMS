@@ -33,4 +33,3 @@ modules:
         strip-components: 0
   - hugo.yml
   - git.yml
-
