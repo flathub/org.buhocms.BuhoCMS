@@ -25,11 +25,15 @@ modules:
     sources:
       - type: git
         url: https://github.com/iakmds/buhocms.git
-        tag: v0.5.0
-        commit: a2ab96487b9574b38f8402cbcd64738c0666848f
+        tag: v0.6.0-flatpak-test
+        commit: 9e5b7f748a5feca3a31424e6cfbb3e6cc4ce60ec
       - type: archive
-        url: https://github.com/iakmds/buhocms/releases/download/v0.5.0/BuhoCMS-Linux-Portable-0.5.0.tar.gz
-        sha256: 988e8ffd97558e8724989b69473abbaf0eff0dab58a107a143e2086231bcbc48
+        url: https://github.com/iakmds/buhocms/releases/download/v0.6.0-flatpak-test/BuhoCMS-Linux-Portable-0.6.0.tar.gz
+        sha256: 7a862a8077845efee5a18b347dc999e6fc6cbbbcdebddbbd47fe9fa1c7aa945b
         strip-components: 0
   - hugo.yml
   - git.yml
+  - name: Jekyll
+    buildsystem: simple
+    build-commands:
+      - gem install jekyll bundler
