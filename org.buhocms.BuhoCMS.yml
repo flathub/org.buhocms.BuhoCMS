@@ -36,6 +36,7 @@ modules:
   - name: Jekyll
     buildsystem: simple
     build-commands:
+      - gem install webrick-1.8.1.gem
       - gem install jekyll-4.3.2.gem
       - gem install bundler-2.4.10.gem
     sources:
@@ -45,3 +46,6 @@ modules:
       - type: file
         url: https://rubygems.org/downloads/bundler-2.4.10.gem
         sha256: b9806fa944063a6a8676a8f9ed4c7c776a36c3bc82f26c5760867a0285b4a121
+      - type: file
+        url: https://rubygems.org/downloads/webrick-1.8.1.gem
+        sha256: 19411ec6912911fd3df13559110127ea2badd0c035f7762873f58afc803e158f
