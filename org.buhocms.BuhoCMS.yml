@@ -33,19 +33,19 @@ modules:
         strip-components: 0
   - hugo.yml
   - git.yml
-  - name: Jekyll
+  - name: ruby
+    config-opts:
+      - --disable-install-doc
+    sources:
+      - type: archive
+        url: https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.2.tar.gz
+        sha256: 96c57558871a6748de5bc9f274e93f4b5aad06cd8f37befa0e8d94e7b8a423bc
+  - name: bundler
     buildsystem: simple
     build-commands:
-      - gem install --user-install webrick-1.8.1.gem
-      - gem install --user-install jekyll-4.3.2.gem
-      - gem install --user-install bundler-2.4.10.gem
+      - gem install --local bundler-2.4.10.gem
     sources:
-      - type: file
-        url: https://rubygems.org/downloads/jekyll-4.3.2.gem
-        sha256: 5d336d3e9eeaed7e69cf8b938da02bb72ae3afb226208df514036d69654f7771
-      - type: file
+      - type: archive
         url: https://rubygems.org/downloads/bundler-2.4.10.gem
         sha256: b9806fa944063a6a8676a8f9ed4c7c776a36c3bc82f26c5760867a0285b4a121
-      - type: file
-        url: https://rubygems.org/downloads/webrick-1.8.1.gem
-        sha256: 19411ec6912911fd3df13559110127ea2badd0c035f7762873f58afc803e158f
+  - rubygems.json
