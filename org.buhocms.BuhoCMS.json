@@ -51,7 +51,7 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
+                    "type": "file",
                     "url": "https://rubygems.org/downloads/bundler-2.4.10.gem",
                     "sha256": "b9806fa944063a6a8676a8f9ed4c7c776a36c3bc82f26c5760867a0285b4a121"
                 }
