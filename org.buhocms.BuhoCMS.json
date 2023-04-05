@@ -41,8 +41,8 @@
                 }
             ]
         },
-        "hugo.yml",
-        "git.yml",
+        "hugo.json",
+        "git.json",
         {
             "name": "ruby",
             "config-opts": [
