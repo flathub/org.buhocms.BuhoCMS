@@ -36,7 +36,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/iakmds/buhocms/releases/download/v0.6.0-flatpak-jekyll-test2/BuhoCMS-Linux-Portable-0.6.0.tar.gz",
-                    "sha256": "7a862a8077845efee5a18b347dc999e6fc6cbbbcdebddbbd47fe9fa1c7aa945b",
+                    "sha256": "87a440c70fac3d655e14f63990fe87cbe633f36b5e82960db544cb45b046b3a2",
                     "strip-components": 0
                 }
             ]
