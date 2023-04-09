@@ -29,7 +29,7 @@ modules:
         commit: a2ab96487b9574b38f8402cbcd64738c0666848f
       - type: archive
         url: https://github.com/iakmds/buhocms/releases/download/v0.6.0-flatpak-jekyll-test2/BuhoCMS-Linux-Portable-0.6.0.tar.gz
-        sha256: 307c561db2aa82366b9f81cfe91e949da95086782f69b71cd16e598df8abfd44
+        sha256: 6440e602f9c3f46410ef15249782a4156c0ef94b6e954ba8444a436420832a91
         strip-components: 0
   - hugo.yml
   - git.yml
