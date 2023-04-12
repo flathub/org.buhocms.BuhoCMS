@@ -1,9 +1,0 @@
-name: hugo
-buildsystem: simple
-build-commands:
-  - install -Dm755 hugo ${FLATPAK_DEST}/bin/
-sources:
-  - type: archive
-    url: https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_0.111.3_linux-amd64.tar.gz
-    sha256: 61500f6d39a23d36b946a9f44611c804aec4f1379d6113528672b1ac3077397a
-    strip-components: 0
