@@ -25,9 +25,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/iakmds/buhocms.git
-        tag: v0.7.0
-        commit: 59dcf94cf650765828e3ee76de37ba90dc931d83
+        tag: v0.7.1
+        commit: 0c079e337cc5a6dd03d716bb919af8348771fe1d
       - type: archive
-        url: https://github.com/iakmds/buhocms/releases/download/v0.7.0/BuhoCMS-Linux-Portable-0.7.0.tar.gz
-        sha256: 8810b3d3d4a534141a459fcf665845726a4fcbf4e5a2da1b6c0622a77d8e882c
+        url: https://github.com/iakmds/buhocms/releases/download/v0.7.1/BuhoCMS-Linux-Portable-0.7.1.tar.gz
+        sha256: e20993e35f9b13724ffcdc449a9bdb24d8d1ad527d8b7744d4dee1c98b838d84
         strip-components: 0
